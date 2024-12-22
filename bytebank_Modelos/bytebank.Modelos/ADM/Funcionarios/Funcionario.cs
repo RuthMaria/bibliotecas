@@ -20,6 +20,8 @@ namespace bytebank.Modelos.ADM.Funcionarios
         }
 
         public abstract void AumentarSalario();
-        public abstract double getBonificacao();
+        //  protected internal permite acessar um membro na própria
+        //  biblioteca e nas classes derivadas em outro projeto
+        protected internal abstract double getBonificacao();
     }
 }
